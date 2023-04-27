@@ -1,0 +1,85 @@
+body,
+p {
+  margin: 0;
+  font-family: "KoPubDotum", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  width: 40%;
+  margin: 40px auto;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  color: rgb(114, 114, 114);
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+form > div {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+form label,
+form legend {
+  display: inline-block;
+  width: 7rem;
+}
+
+form [type="text"],
+[type="email"],
+[type="password"] {
+  width: 100%;
+  height: 2.3rem;
+}
+
+fieldset {
+  position: relative;
+  border: 0;
+  margin: 0;
+}
+
+legend {
+  position: absolute;
+  display: inline-block;
+  bottom: 50%;
+  left: 0;
+  padding: 0;
+}
+
+fieldset ul {
+  margin-left: 2rem;
+  width: 100%;
+}
+
+fieldset li {
+  display: inline-block;
+  width: fit-content;
+}
+
+li > label {
+  width: initial;
+}
+
+.container [type="submit"] {
+  width: 100%;
+  height: 3rem;
+  background-color: royalblue;
+  border: 2px solid rgb(41, 67, 143);
+  border-radius: 0.3rem;
+  border-width: 1px 1px 3px;
+  color: white;
+  font-size: xx-large;
+  margin-top: 1rem;
+  box-sizing: content-box;
+}
+
+.submit-button:active {
+  margin-top: 1rem;
+  border: 0;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS box model</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: royalblue;
+            padding: 10px 20px 30px 40px;
+            /* margin: 10px 20px 30px 400px; */
+            margin: 100px 0 100px auto;
+        }
+
+        ul {
+            background: skyblue;
+        }
+
+        body,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        ul li {
+            list-style: none;
+            width: 100px;
+            height: 100px;
+            background: royalblue;
+            border: 5px solid #ddd;
+
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div>div</div>
+
+    <ul>
+        <!-- margin collapsing -->
+        <li style="margin:0px 0px 10px 0px">li a</li>
+        <li style="margin: 50px 0px 0px 0px">li b</li>
+    </ul>
+</body>
+
+</html>

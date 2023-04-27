@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's study inheritance of css</title>
+    <style>
+        div {
+            color: red;
+            /* cannot inherit */
+            border: 5px solid red;
+        }
+
+        #walla {
+            border: 5px solid royalblue;
+        }
+
+        h2 {
+            border: inherit;
+        }
+
+        p {
+            color: initial;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 id="walla">Hello</h1>
+        <h2>World</h2>
+        <p>Hello</p>
+        <button type="button">Hello</button>
+    </div>
+</body>
+
+</html>
